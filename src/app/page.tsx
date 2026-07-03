@@ -163,62 +163,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Latest Blogs Preview */}
-      <section className="py-20 bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-12 gap-4">
-            <div>
-              <h2 className="font-display text-3xl sm:text-4xl font-bold text-bluefair-950 mb-2">
-                Latest from Our Blog
-              </h2>
-              <p className="text-gray-600">Tips, news, and stories from the fairway</p>
-            </div>
-            <Link
-              href="/blogs"
-              className="text-bluefair-600 font-semibold hover:text-bluefair-700"
-            >
-              View all posts →
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "5 Tips to Improve Your Drive",
-                excerpt: "Master the fundamentals of a powerful and accurate drive with these expert tips.",
-                date: "June 15, 2026",
-              },
-              {
-                title: "Spring Tournament Recap",
-                excerpt: "Highlights from our annual Spring Classic and congratulations to all winners.",
-                date: "May 28, 2026",
-              },
-              {
-                title: "Course Maintenance Updates",
-                excerpt: "See how our grounds team keeps Blue Fair in championship condition year-round.",
-                date: "May 10, 2026",
-              },
-            ].map((post) => (
-              <article
-                key={post.title}
-                className="rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
-              >
-                <div className="h-40 bg-gradient-to-br from-bluefair-500 to-bluefair-700 flex items-center justify-center">
-                  <span className="text-5xl">📰</span>
-                </div>
-                <div className="p-6">
-                  <p className="text-xs text-bluefair-500 font-medium mb-2">{post.date}</p>
-                  <h3 className="font-display text-lg font-bold text-bluefair-950 mb-2">
-                    {post.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm">{post.excerpt}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-bluefair-700 to-bluefair-900 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
